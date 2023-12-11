@@ -8,7 +8,7 @@
 专题题库查不到时可以选择全部题库/大一/大二的基础题库查询。专题题库是基础题库和专题题库混合抽题的。
 
 ## 感谢
-感谢 Rosemoe 提供的 api 接口，有任何问题可加 QQ 群 601745455 咨询。
+感谢 Rosemoe 提供的 api 接口以及 inko 提供的反代服务，有任何问题可加 QQ 群 601745455 咨询。
 
 可以请开发者们喝一杯咖啡么~<br>
 <img src="https://m.qpic.cn/psc?/V51ahGj52TSm2G1HYFQ90MQmdC0oFr6P/ruAMsa53pVQWN7FLK88i5oKgWWr1W94mcXAbY8BBuuPrVjqASzXJWlKY7b*BLaCQeOAwLAVKa5hkhfPWOPoP6.75BMZcqhxAl72eU2ZqSrQ!/mnull&bo=OASQBgAAAAABB4o!&rf=photolist&t=5">
