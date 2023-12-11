@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ownfont, -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+    transition: all 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #dff9fb;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 300px;
+    font-size: 40px;
+    margin: 0 15px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 350px;
+}
+
+.dropdown {
+    position: relative;
+    margin: 5px 15px;
+    width: 150px;
+    height: 50px;
+    z-index: 900;
+}
+
+.dropdown:before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown.active:before {
+    top: 22px;
+    transform: rotate(-225deg);
+}
+
+.dropdown input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.dropdown .option {
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    overflow-x: auto;
+    display: none;
+}
+
+.dropdown.active .option {
+    display: block;
+}
+
+.dropdown .option div {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover {
+    background-color: #22a6b3;
+    color: #fff;
+}
+
+.search {
+    position: relative;
+    margin: 5px 15px;
+    width: 500px;
+    height: 50px;
+}
+
+.search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search button:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #22a6b3;
+    border-radius: 50%;
+    transform: translate(-4px, -4px);
+}
+
+.search button::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #22a6b3;
+    transform: translate(6px, 6px) rotate(315deg);
+}
+
+.cardContainer {
+    position: relative;
+    display: none;
+    top: 150px;
+    width: 100%;
+    height: 500px;
+    max-width: 680px;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+.cardContainer .card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.cardContainer .card>* {
+    padding: 15px 30px;
+}
+
+.cardContainer .card .line {
+    padding: 0 30px;
+}
+
+.cardContainer .card .line:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 680px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 50px;
+    color: #95a5a6;
+}
+
+.answer {
+    color: #e74c3c;
+}
+
+@media (max-width: 900px) {
+    .title {
+        top: 100px;
+        font-size: 30px;
+    }
+
+    form {
+        justify-content: left;
+        top: 150px;
+    }
+
+    .cardContainer {
+        padding: 0 15px;
+        top: 50px;
+        height: 280px;
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+}
+
+@font-face {
+    font-family: 'ownfont';
+    src: url(./ZhuZiAYuanJWD.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
