@@ -1,4 +1,4 @@
-window.onload = function () { alert("注意：专题题库查不到时可以选择全部题库/大一/大二的基础题库查询。专题题库是基础题库和专题题库混合抽题的。\n\n感谢 Rosemoe 提供的 api 接口以及 inko 提供的反代服务，有任何问题可加 QQ 群 601745455 咨询。\n\n可以点击下方 Github 链接请开发者们喝一杯咖啡么~\n\n最新题库已经更新。2023-12-11-19:36"); }
+window.onload = function () { alert("注意：专题题库查不到时可以选择全部题库/大一/大二的基础题库查询。专题题库是基础题库和专题题库混合抽题的。\n\n感谢 Rosemoe 提供的 api 接口以及 inko 提供的反代服务，有任何问题可加 QQ 群 601745455 咨询。\n\n可以点击下方 Github 链接给开发者们一个 Star 或者请开发者们喝一杯咖啡么~\n\n最新题库已经更新。2023-12-11-20:17"); }
 
 let options = document.querySelectorAll('.option div');
 let optionBox = document.querySelector('.optionBox');
