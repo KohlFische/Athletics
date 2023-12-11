@@ -8,6 +8,11 @@
 
 a {
     text-decoration: none;
+    color: red!important;
+}
+
+a:visited {
+    color: inherit;
 }
 
 body {
@@ -27,6 +32,16 @@ body {
     top: 300px;
     font-size: 40px;
     margin: 0 15px;
+}
+
+.title .reward {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 0 10px;
+    margin-left: 10px;
+    border-radius: 20px;
 }
 
 form {
