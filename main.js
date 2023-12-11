@@ -25,9 +25,9 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     if (encodeURIComponent(optionBox.value) == "%E5%85%A8%E9%83%A8%E9%A2%98%E5%BA%93")
-        var apiUrl = 'https://api-rosemoe-cyou.inko.lv/v1/problem_bank/query?problem_set=all&content_query=' + encodeURIComponent(searchBox.value);
+        var apiUrl = 'https://rsmapi.inko.lv/v1/problem_bank/query?problem_set=all&content_query=' + encodeURIComponent(searchBox.value);
     else
-        var apiUrl = 'https://api-rosemoe-cyou.inko.lv/v1/problem_bank/query?problem_set=' + encodeURIComponent(optionBox.value) + '&content_query=' + encodeURIComponent(searchBox.value);
+        var apiUrl = 'https://rsmpai.inko.lv/v1/problem_bank/query?problem_set=' + encodeURIComponent(optionBox.value) + '&content_query=' + encodeURIComponent(searchBox.value);
     let xhr = new XMLHttpRequest();
 
     xhr.open('GET', apiUrl, true);
